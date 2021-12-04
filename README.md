@@ -19,4 +19,6 @@ $ docker buildx build --builder=YOURBUILDER --platform=linux/amd64,linux/arm64 -
 
 - 2021/11/24
     - 初版
+- 2021/12/5
+    - ビルドの自動化
 
