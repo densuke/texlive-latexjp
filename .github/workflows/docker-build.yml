@@ -1,5 +1,13 @@
 name: Dockerイメージビルド
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - testing
+      - release
+  schedule: # 2週間後とのビルド
+    - cron: '0 2 * 8-14 0'
+    - cron: '0 2 * 22-28 0'
 jobs:
   image-build:
     runs-on: ubuntu-20.04
